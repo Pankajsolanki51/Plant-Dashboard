@@ -1,0 +1,228 @@
+:root {
+    --primarycolor: hsl(94, 59%, 35%);
+    --hovercolor: #bdf094;
+    --palegreen: hsl(96, 75%, 89%);
+    --whitecolor: hsl(0, 0%, 100%);
+    --blackcolor: hsl(0, 0%, 18%);
+    --textcolor: hsl(240, 1%, 48%);
+    --bgcolor: hsl(220, 10%, 94%);
+    --greytext: rgb(190, 190, 190);
+    --inputcolor: hsl(330, 12%, 97%);
+
+    /*font and typography*/
+
+    --biggestfontsize: 2.5rem;
+    --h1fontsize: 1.5rem;
+    --h2fontsize: 1.25rem;
+    --h3fontsize: 1rem;
+    --normalfontsize: .938rem;
+    --smallfontsize: .813rem;
+    --smallestfontsize: .75rem;
+
+}
+
+.title {
+    h1 {
+        font-size: var(--h1fontsize);
+        color: var(--blackcolor);
+        font-weight: 700;
+    }
+
+    p{
+        font-size: var(--normalfontsize);
+        color: var(--textcolor);
+        font-weight: 500;
+    }
+}
+
+
+.searchBar {
+    padding: 1rem 2rem;
+    background: var(--whitecolor);
+    border-radius: 5px;
+    gap: 1rem;
+    box-shadow: 0 2px 4px var(--inputcolor);
+    margin-left: -10rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.topSection {
+    .headerSection {
+        justify-content: space-between;
+    }
+}
+.adminDiv{
+    gap:1rem;
+
+    .icon{
+        font-size: var(--biggestfontsize);
+        background: white;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 0 2px 4px var(--inputcolor);
+        color: var(--textcolor);
+        margin-left: -5.6rem;
+    }
+
+    .adminImage{
+        border: 3px solid var(--whitecolor);
+        border-radius: 10px;
+        width: 2.5rem;
+        height:2.5rem;
+         overflow: hidden;
+        margin-top: -2.8rem;
+        margin-left: -2.3rem;
+        box-shadow: 0 2px 4px var(--inputcolor);
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+.cardSection{
+    margin-top: 3rem;
+    gap: 1rem;
+
+    .rightCard{
+        position: relative;
+        flex-basis: 70%;
+        height: 200px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: auto;
+        padding: 2rem;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        .videoDiv{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            video{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        h1, p, .btn{
+            z-index: 100;
+
+        }
+        h1{
+            font-size:var(--h1fontsize);
+            color: var(--whitecolor);
+            font-weight: 800;
+        }
+         
+        p{
+            padding: 1rem;
+            color: var(--palegreen);
+            font-weight: 500;
+        }
+        
+    }
+}
+.buttons{
+    gap: 1rem;
+
+}
+.btn{
+    box-shadow: none;
+    padding: .8rem 1.5rem;
+    color: var(--primarycolor);
+    border: 2px solid transparent;
+}
+.tranparent{
+    background: none;
+    border: 2px solid var(--palegreen);
+    color: var(--palegreen);
+
+    &:hover{
+        background: var(--palegreen);
+        color: var(--primarycolor);
+    }
+}
+.main{
+    position: relative;
+    padding: 1rem;
+    height: 200px;
+    border-radius: 1rem;
+    justify-content: space-between;
+
+    &::before{
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 75%;
+     background: var(--palegreen);
+     left: 0;
+     bottom: 0;
+     border-radius: 1rem;
+    }
+
+ }
+.leftCard{
+    flex-basis: 40%;
+    
+}
+
+.textDiv{
+    z-index:100;
+    
+    h1{
+        font-size: var(--h1fontsize);
+        padding-left: 0rem;
+        padding-bottom: 1rem;
+        color:var(--blackcolor)
+    }
+             
+}
+.flex{
+    gap: 1.5rem;
+    font-weight: 500;
+    color: var(--blackcolor);
+}       
+small{
+    font-size: var(--normalfontsize);
+    display: block;
+    color: var(--primarycolor);
+    font-weight: 500;
+    padding: .5rem 0;
+}
+.link{
+    margin-top: 2rem;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--primarycolor);
+
+        .icon{
+            transform: translateX(10px);
+            transition: .3s ease;
+        }
+    }
+}
+.imgDiv{
+    transform: translateY(-20px);
+
+    img{
+        margin-left: -3rem;
+        width: 200px;
+        background:none;
+    }
+}

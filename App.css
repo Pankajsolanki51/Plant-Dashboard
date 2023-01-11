@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mulish&display=swap');
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  transition: .3s ease;
+  height: auto;
+}
+:root{
+  --primarycolor:hsl(94,59%,35%);
+  --hovercolor:#bdf094;
+  --palegreen: hsl(96,75%,89%);
+  --whitecolor:hsl(0,0%,100%);
+  --blackcolor:hsl(0,0%,18%);
+  --textcolor:hsl(240,1%,48%);
+  --bgcolor:hsl(220,10%,94%);
+  --greytext:rgb(190,190,190);
+  --inputcolor: hsl(330,12%,97%);
+
+  /*font and typography*/
+
+  --biggestfontsize:2.5rem;
+  --h1fontsize:1.5rem;
+  --h2fontsize:1.25rem;
+  --h3fontsize:.938rem;
+  --smallfontsize:.813rem;
+  --smallestfontsize:.75rem;
+
+}
+
+/*Default Styles*/
+html{
+  font-size: 90%;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.icon{
+  font-size: var(--h2fontsize);
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.grid{
+  display: grid;
+  align-items: center;
+  grid-gap: 1.5rem;
+}
+.btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--inputcolor);
+  padding: .8rem 1rem;
+  color: var(--textcolor);
+}
+.btn .icon{
+  margin-left: .5rem;
+}
+.btn:hover{
+  background: var(--palegreen);
+  color: var(--primarycolor);
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  
+}
+.container{
+  position: relative;
+  width: 95vw;
+  height: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgcolor);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px var(--greytext);
+}
+
+::-webkit-scrollbar{
+  display:none;
+}

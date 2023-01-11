@@ -1,0 +1,93 @@
+:root {
+    --primarycolor: hsl(94, 59%, 35%);
+    --hovercolor: #bdf094;
+    --palegreen: hsl(96, 75%, 89%);
+    --whitecolor: hsl(0, 0%, 100%);
+    --blackcolor: hsl(0, 0%, 18%);
+    --textcolor: hsl(240, 1%, 48%);
+    --bgcolor: hsl(220, 10%, 94%);
+    --greytext: rgb(190, 190, 190);
+    --inputcolor: hsl(330, 12%, 97%);
+    --itemcardcolor: hsl(120, 5%, 88%);
+    --itemcardhover: hsl(120, 27%, 87%);
+
+    /*font and typography*/
+
+    --biggestfontsize: 2.5rem;
+    --h1fontsize: 1.5rem;
+    --h2fontsize: 1.25rem;
+    --h3fontsize: 1rem;
+    --normalfontsize: .938rem;
+    --smallfontsize: .813rem;
+    --smallestfontsize: .75rem;
+
+}
+
+
+.activitySection {
+    flex-basis: 50%;
+
+    .heading {
+        width: 100%;
+        justify-content: space-between;
+    
+        h1 {
+            font-size: var(--h2fontsize);
+            color: var(--blackcolor);
+            font-weight: 700;
+        }
+    
+        .btn {
+            border: 1px solid transparent;
+        }
+    
+        .btn:hover {
+            border: 1px solid var(--primarycolor);
+        }
+    }
+
+    .secContainer {
+        margin-top: 1rem;
+
+        .singleCustomer {
+            align-items: flex-start;
+            justify-content: space-between;
+
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 2px 4px var(--itemcardcolor);
+                margin-right: 1rem;
+            
+            } 
+
+            .customerDetails{
+                flex: 1;
+
+                .name{
+                    font-size: var(--h3fontsize);
+                    font-weight: 600;
+                    color: var(--blackcolor);
+                    display: block;
+                }
+
+                small{
+                    font-weight: 500;
+                    color: var(--textcolor);
+                    font-size: var(--smallfontsize);
+                }
+            }
+
+            .duration{
+                color: var(--textcolor);
+                font-weight: 500;
+                font-size: var(--smallestfontsize);
+                margin-left: 10rem;
+            }
+        }
+    }
+}
+
+
