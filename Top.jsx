@@ -7,7 +7,7 @@ import { TbMessageCircle } from "react-icons/tb";
 import { BsArrowRightShort } from "react-icons/bs";
 import img from '../../Assets/24.jpg';
 import img2 from '../../Assets/np2.png';
-import video from '../../Assets/yo.mp4';
+import video from '../../Assets/yo(1).mp4';
 const Top = () => {
     return (
         <>
